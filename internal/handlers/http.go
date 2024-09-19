@@ -43,7 +43,6 @@ func GetMessageCountHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func GetIndexHandler(w http.ResponseWriter, r *http.Request) {
-	// Serve index.html from the public directory
 	path := filepath.Join("public", "index.html")
 	http.ServeFile(w, r, path)
 }
